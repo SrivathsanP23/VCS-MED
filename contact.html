@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Responsive Contact Us Form | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    .containerss {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+        margin: 20px;
+    }
+
+    #back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Company Logo">
+
+        </div>
+
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+
+
+    </div>
+
+    <br><br><br>
+
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Address</div>
+                    <div class="text-one">
+                        No. 5, Ariyalur Village,
+                        Madhavaram Taluk,
+                        Thiruvallur District,
+
+                    </div>
+                    <div class="text-two"> Chennai – 600060</div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Phone</div>
+                    <div class="text-one">044-26502264</div>
+                    <div class="text-two">+91-9710911777</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one"><a href="mailto:info@dynamedequipments.com"
+                            style="text-decoration: none; color: #AFAFB6; font-size: small">info@dynamed</a></div>
+                    <div class="text-two"><a href="mailto:sales@dynamedequipments.com"
+                            style="text-decoration: none; color: #AFAFB6; font-size: small;">sales@dynamed</a></div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box message-box">
+                        <input type="text" placeholder="Enter your Query" id="">
+                    </div>
+                    <div class="button">
+                        <input type="submit" id="myInput" onclick="checkInput()">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function checkInput() {
+            var inputValue = document.getElementById("myInput").value;
+
+            if (inputValue.trim() == '') {
+                alert('Not Submitted ' + inputValue);
+            } else {
+                alert('Input is an empty space.');
+            }
+        }
+    </script>
+
+
+    <div class="containerss">
+        <div class="mapouter">
+            <h2 style="text-align: center;">LOCATION 📍</h2>
+            <div class="gmap_canvas"><iframe
+                    src="https://maps.google.com/maps?q=VCSmed%20India%20Pvt.%20Ltd&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+                    frameborder="0" scrolling="no" style="width: 500px; height: 300px;"></iframe>
+                <style>
+                    
+
+                    .maprouter a {
+                        color: #fff !important;
+                        position: absolute !important;
+                        top: 0 !important;
+                        z-index: 0 !important;
+                        padding-bottom: 10px;
+                    }
+
+                    .mapouter {
+                        padding-bottom: 10%;
+                        /* Default aspect ratio */
+                        overflow: hidden;
+                        height: 300px;
+                        width: 500px;
+                        background: #fff;
+                    }
+
+                    .mapouter iframe {
+                        width: 100%;
+                        height: 100%;
+                        border: 0;
+                    }
+                </style><a href="https://blooketjoin.org/blooket-host/">blooket host</a>
+                <style>
+                    .gmap_canvas {
+                        overflow: hidden;
+                        height: 300px;
+                        width: 500px;
+                    }
+
+                    .gmap_canvas iframe {
+                        position: relative;
+                        z-index: 2
+                    }
+
+                    .gm-style .place-card-large {
+                        padding: 9px 4px 10px 57px;
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="back-to-top">
+        <i class="fas fa-arrow-up fa-2x"></i>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+    <script>
+
+        // Back to Top Button Script
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+
+            $('#back-to-top').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 300);
+                return false;
+            });
+        });
+    </script>
+
+
+
+
+    <footer style="
+        background-color: #eee;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
+        bottom: 0;">
+        <p>&copy; 2023 VCS MED. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

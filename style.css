@@ -1,0 +1,278 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    background: #c8e8e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.container .content .left-side {
+    min-height: 100vh;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content .left-side::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+
+.content .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i {
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+}
+
+.text-one a:hover{
+    color:chocolate;
+}
+
+.text-two a:hover{
+    color: chocolate;
+}
+
+.content .left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+    font-size: 14px;
+    color: #afafb6;
+}
+
+.container .content .right-side {
+    width: 75%;
+    margin-left: 75px;
+}
+
+.content .right-side .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box {
+    min-height: 110px;
+}
+
+.right-side .input-box textarea {
+    padding-top: 6px;
+}
+
+.right-side .button {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.right-side .button input[type="submit"] {
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input[type="submit"]:hover {
+    background: #5029bc;
+}
+
+
+
+
+
+
+.header {
+    background-color: #fff;
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 500px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+.header ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.header li {
+    padding: 10px;
+    height: 100px;
+    margin: 10px;
+}
+
+.header a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.header a:hover {
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+    text-emphasis: 10px;
+    color: rgb(231, 160, 67);
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+   
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header ul {
+        margin-top: 20px;
+        
+
+    }
+
+    .header a{
+        font-size: small;
+        font-weight: bolder;
+        
+    }
+    .header a:hover{
+        color: chocolate;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+    
+    
+    .container{
+        object-fit: fill;
+        margin: 20px 10px;
+    }
+
+    .container .content{
+        margin: 20px 74px;
+    }
+    .container .content .left-side::before {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+
+    .mapouter {
+        padding-bottom: 10%;
+        height: 200px;
+        width: 412px;
+        background: #fff;
+    }
+
+    .gmap_canvas {
+        overflow: hidden;
+        height: 200px;
+        width: 300px;
+    }
+
+    .gm-style .place-card-large {
+        padding: 9px 4px 10px 67px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .mapouter {
+        padding-bottom: 10%; /* Further adjustment for iPhone 13 layout */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Adjust the font size for smaller screens */
+    }
+}

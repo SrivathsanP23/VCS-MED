@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    justify-content: center;
+}
+
+
+
+.header {
+    background-color: #fff;
+    display: flex;
+    height: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 500px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+.header ul {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.header li {
+
+    padding: 10px;
+    height: 100px;
+    margin: 10px;
+}
+
+.header a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.header a:hover {
+    text-decoration: none;
+    text-emphasis: 10px;
+    transition: all 0.1s ease-in-out;
+    color: rgb(231, 160, 67);
+}
+
+
+.hero {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+}
+
+.hero .content {
+    text-align: center;
+    color: #0c0c0c;
+}
+
+
+
+.hero h1 {
+    font-size: 4em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.hero p {
+    font-size: 2em;
+    line-height: 1.5;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+
+
+/* effects */
+
+.typewriter-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.typewriter-text {
+    overflow: hidden;
+    justify-content: center;
+    white-space: nowrap;
+    font-size: 24px;
+    margin-left: 40px;
+
+    text-align: center;
+
+
+    letter-spacing: 0.1em;
+
+}
+
+
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+
+.cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 300px;
+    align-items: center;
+    background-color: rgb(192, 203, 212);
+
+    transition: all 1s;
+    position: relative;
+}
+
+.cont .contsub {
+    padding-left: 10px;
+}
+
+
+
+/*footer*/
+
+footer {
+    bottom: 0;
+    background-color: #eee;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.hero {
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.benefits h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: xx-large;
+}
+
+.benefits ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.benefits li {
+    padding: 15px;
+    border: 2px solid #0d0d0d;
+    border-radius: 10px;
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 20px;
+    animation: fadeInUP 5s ease-in infinite;
+}
+
+.text-animation {
+    padding: 50px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUP 1s ease-in-out 0.5s forwards;
+}
+
+@keyframes fadeInUP {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-text {
+    transform: translateY(20px);
+    text-align: center;
+    border: 1px #000;
+    animation: fadeInUp 1s ease-in-out 2s forwards;
+}
+
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background-color: #eee;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+@media (max-width: 768px) {
+   
+
+    .header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .header ul {
+        margin-top: 20px;
+
+    }
+    .header a{
+        font-size: small;
+        font-weight: bolder;
+    }
+    .header a:hover{
+        color: chocolate;
+    }
+
+
+    .hero {
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .typewriter-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .typewriter-text {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .typewriter-text h2 {
+        margin-top: 30px;
+        font-size: medium;
+        font-weight: 500;
+    }
+
+    .benefits li {
+        font-size: 16px;
+    }
+
+    .cont {
+        margin-top: 30px;
+        height: auto;
+        font-weight: 400;
+        font-size: x-small;
+        padding-left: 5px;
+        text-align: center;
+        flex-direction: column-reverse;
+
+    }
+
+    .cont img {
+        width: 280px;
+        height: 145px;
+    }
+}
